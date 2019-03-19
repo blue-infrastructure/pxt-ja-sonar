@@ -10,7 +10,7 @@ enum PingUnit {
 /**
  * Sonar and ping utilities
  */
-//% color="#2c3e50" weight=10
+//% color="#b0c4de" weight=10
 namespace sonar {
     /**
      * Send a ping and get the echo time (in microseconds) as a result
@@ -19,7 +19,7 @@ namespace sonar {
      * @param unit desired conversion unit
      * @param maxCmDistance maximum distance in centimeters (default is 500)
      */
-    //% blockId=sonar_ping block="距離を測定する trig %trig|echo %echo|unit %unit"
+    //% blockId=sonar_ping block="距離を測定する|trig %trig|echo %echo|unit %unit"
     export function ping(trig: DigitalPin, echo: DigitalPin, unit: PingUnit, maxCmDistance = 500): number {
         // send pulse
         pins.setPull(trig, PinPullMode.PullNone);
