@@ -26,7 +26,7 @@ namespace sonar {
         pins.digitalWritePin(trig, 0);
         control.waitMicros(2);
         pins.digitalWritePin(trig, 1);
-        control.waitMicros(10);
+        control.waitMicros(20);
         pins.digitalWritePin(trig, 0);
 
         // read pulse
